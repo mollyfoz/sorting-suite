@@ -27,7 +27,8 @@ const mergeSplit = (leftArray, rightArray) => {
       array.push(rightArray.shift());
     }
   }
-  return array.concat(leftArray.slice()).concat(rightArray.slice());
+  array.push(...leftArray, ...rightArray);
+  return array;
 }
 
 

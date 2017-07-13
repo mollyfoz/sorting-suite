@@ -27,7 +27,7 @@ describe('Merge sort', () => {
 
   it('Should be able to sort a large random generated array', () => {
     let randomArray = [];
-    let randomNumberCount = 150000;
+    let randomNumberCount = 130000;
 
     for (let i = 0; i < randomNumberCount; i++) {
       randomArray.push(Math.floor(Math.random() * (1000 - 100 + 1)) + 100)
